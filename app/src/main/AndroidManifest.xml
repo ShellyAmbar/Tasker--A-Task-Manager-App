@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shellyAmbar.ambar.workoutplanner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_tasker"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_tasker"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.shellyAmbar.ambar.workoutplanner.MainActivity"
+            android:finishOnCloseSystemDialogs="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shellyAmbar.ambar.workoutplanner.NewTaskActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shellyAmbar.ambar.workoutplanner.AlertActivity"
+            android:theme="@style/Theme.UserDialog.AppCompat" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.shellyAmbar.ambar.workoutplanner.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.shellyAmbar.ambar.workoutplanner.VerificationActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+
+        <activity
+            android:name="com.shellyAmbar.ambar.workoutplanner.ResetPassword"
+            android:theme="@style/Theme.UserDialog.AppCompat" />
+        <activity
+            android:name="com.shellyAmbar.ambar.workoutplanner.SetCategoryActivity"
+            android:theme="@style/Theme.UserDialog.AppCompat" />
+        <activity android:name="com.shellyAmbar.ambar.workoutplanner.NewTaskSettings"
+            android:theme="@style/Theme.UserDialog.AppCompat" />
+
+        <receiver android:name="com.shellyAmbar.ambar.workoutplanner.MyAlaram"
+            android:enabled="true"
+            android:exported="true"
+            android:logo="@drawable/logo_tasker"
+
+
+            />
+
+    </application>
+
+</manifest>

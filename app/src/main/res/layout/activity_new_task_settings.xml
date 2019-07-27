@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:theme="@style/Theme.UserDialog.AppCompat">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </android.support.v7.widget.Toolbar>
+
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/green"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/title_new_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/title_edt"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/task_name"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_light" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+
+            android:id="@+id/body_edt"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/task_body"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_light" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/radio_group"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:buttonTint="@color/colorPrimaryDark"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                android:id="@+id/important_radio"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/important"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:buttonTint="@color/colorPrimaryDark"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                android:id="@+id/un_important_radio"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/un_important"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.SwitchCompat
+
+
+            android:hint="@string/add_alaram"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/switch_alert"
+
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.SwitchCompat
+
+            android:hint="@string/repeating"
+
+            android:textColorHint="@color/colorPrimaryDark"
+            android:id="@+id/switch_alert_repeating"
+
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/alert_date_text"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/alert_hint"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/add_new_task_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_button_style"
+            android:padding="10dp"
+            android:text="@string/positive_add" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+ </ScrollView>
+</LinearLayout>

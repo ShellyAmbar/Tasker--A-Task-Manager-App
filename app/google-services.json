@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "274729090081",
+    "firebase_url": "https://tasker-b0a96.firebaseio.com",
+    "project_id": "tasker-b0a96",
+    "storage_bucket": "tasker-b0a96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274729090081:android:3ea24c6f564c7a42",
+        "android_client_info": {
+          "package_name": "com.shellyAmbar.ambar.workoutplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274729090081-8ekg8gvljnlib7rmhclnp34tl1j3tvq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shellyAmbar.ambar.workoutplanner",
+            "certificate_hash": "da65ecd47f28421ec213052acf9c37ee3d744b9d"
+          }
+        },
+        {
+          "client_id": "274729090081-q9oibbbk1q598lb4o518ar7ge90i6rs9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVeXyS_9lKdU0u0XZvvd1Git0r9ULcxaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274729090081-q9oibbbk1q598lb4o518ar7ge90i6rs9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

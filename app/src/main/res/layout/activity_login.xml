@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo_tasker" />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_light"
+
+        android:textColorHint="@color/green">
+
+        <AutoCompleteTextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/green"
+            android:textColorHighlight="@color/greeen"
+            android:textColorHint="@color/green" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_light"
+
+        android:textColorHint="@color/green">
+
+        <AutoCompleteTextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:autofillHints="@string/prompt_password"
+            android:completionHintView="@string/prompt_password"
+            android:hint="@string/prompt_password"
+            android:imeActionId="6"
+            android:imeActionLabel="@string/prompt_password"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/green"
+            android:textColorHighlight="@color/greeen"
+            android:textColorHint="@color/green" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+
+        android:gravity="center_horizontal"
+        android:id="@+id/login_layout_or"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:orientation="horizontal">
+
+        <View
+
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/color_turkiz" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text= "@string/or"
+            />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/color_turkiz" />
+    </LinearLayout>
+
+
+    <TextView
+
+        android:id="@+id/btn_layout_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/signup_account"
+        android:textColor="@color/greeen"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/email_sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/reg_button_style"
+            android:text="@string/login"
+            android:textColor="@color/color_card_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/reg_button_style"
+            android:padding="8dp"
+            android:text="@string/resend"
+            android:textColor="@color/color_card_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>

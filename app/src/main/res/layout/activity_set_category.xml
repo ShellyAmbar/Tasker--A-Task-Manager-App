@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:theme="@style/Theme.UserDialog.AppCompat"
+    tools:context=".SetCategoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/green"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/new_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/title_edt"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/select_title_hint"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edit_text_light" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/new_category_image"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/edit_text_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/select_image_hint"
+            android:textAlignment="center"
+            android:textColor="@color/color_turkiz"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/Arrow_down_image"
+            android:layout_width="35dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/new_category_image"
+            app:srcCompat="@drawable/ic_arrow_down"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/new_category_image" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/new_category_color"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/edit_text_light"
+
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/select_color_hint"
+            android:textAlignment="center"
+            android:textColor="@color/color_turkiz"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/Arrow_down_color"
+            android:layout_width="35dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/new_category_color"
+            app:srcCompat="@drawable/ic_arrow_down"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/new_category_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add_new_category_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_button_style"
+            android:padding="10dp"
+            android:text="@string/new_category_btn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<root>
+    <item name='com.bumptech.glide.annotation.GlideModule'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

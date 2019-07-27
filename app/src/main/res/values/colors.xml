@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#78f2b1</color>
+    <color name="colorPrimaryDark">#03483e</color>
+    <color name="color_turkiz">#89f7f1</color>
+
+
+    <color name="colorAccent">#cafaff</color>
+    <color name="dark_green">#06955b</color>
+    <color name="green">#00d986</color>
+    <color name="dark_blue">#3886b4</color>
+    <color name="orange">#ffcb1f</color>
+    <color name="perpele">#ad1fff</color>
+    <color name="red">#ff1616</color>
+    <color name="greeen">#35ff16</color>
+    <color name="yellow">#fff716</color>
+
+    <color name="pink">#ff16ff</color>
+
+
+
+
+
+</resources>
